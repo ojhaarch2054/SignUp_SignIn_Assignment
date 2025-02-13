@@ -14,6 +14,9 @@ const SignupView = () => {
     const signInPress = () => {
         console.log("redirecting to sign in page....")
     }
+    const signUpPress = () => {
+      console.log("Congratulation, account created!!!!");
+    }
   return (
     <View style={styles.container}>
         <View style={styles.leftArrowContainer}>
@@ -47,6 +50,7 @@ const SignupView = () => {
           name="arrow-right"
           size={20}
           style={styles.rightArrowIcon}
+          onPress={signUpPress}
         />
         <Text style={styles.signupText}>Sign Up</Text>
       </TouchableOpacity>
@@ -112,7 +116,7 @@ const styles = StyleSheet.create({
   signInContainer: {
     justifyContent: "center",
     alignItems: "center",
-    marginTop: 330,
+    marginTop: 200,
   },
   leftArrowContainer: {
     marginTop: 50

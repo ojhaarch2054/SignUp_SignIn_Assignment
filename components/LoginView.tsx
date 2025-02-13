@@ -25,13 +25,13 @@ const LoginView = () => {
 
       <View style={styles.viewContainer}>
         <FontAwesome name="envelope" size={20} style={styles.icon} />
-        <TextInput placeholder="Email" keyboardType="email-address" />
+        <TextInput placeholder="Email" keyboardType="email-address" style={styles.Textinput} />
       </View>
 
       <View style={styles.viewContainer}>
         <FontAwesome name="lock" size={20} style={styles.icon} />
 
-        <TextInput placeholder="Password" secureTextEntry={true} />
+        <TextInput placeholder="Password" secureTextEntry={true} style={styles.Textinput} />
         <TouchableOpacity onPress={forgotPw}>
           <Text style={styles.forgotText}>FORGOT</Text>
         </TouchableOpacity>
@@ -115,5 +115,8 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginTop: 330,
+  },
+  Textinput:{
+    width: 80
   },
 });
